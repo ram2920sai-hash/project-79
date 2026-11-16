@@ -27,9 +27,9 @@ The goal was to compare ChatGPT, Google Gemini and Microsoft Copilot on summariz
 | Source comparison | All three selected Library Print at Rs 210. Gemini showed the Rs 240 Campus Desk total and explained that two orders were needed. Copilot showed the total and left the split implicit. ChatGPT incorrectly described Campus Desk as cheaper per page. |
 | Email | ChatGPT produced 81 words, Gemini 90 and Copilot 92. All included the confirmed workshop details. |
 
-![Gemini's source comparison](assets/gemini-task3.jpg)
+![Gemini's source comparison](gemini-task3.jpg)
 
-![ChatGPT's source comparison](assets/chatgpt-task3.jpg)
+![ChatGPT's source comparison](chatgpt-task3.jpg)
 
 *Figures show the original browser outputs from the quality trial.*
 
@@ -45,7 +45,7 @@ For these inputs, all three were useful for summaries and meeting notes. Gemini 
 
 - [Shared four-task prompt](prompt.txt). Exact input used across the three tools.
 - [Topic 79 comparison log](comparison_log.csv). Primary record for the quality observations and browser timings.
-- [Gemini evidence](assets/gemini-task3.jpg) and [ChatGPT evidence](assets/chatgpt-task3.jpg). Original printing-task screenshots.
+- [Gemini evidence](gemini-task3.jpg) and [ChatGPT evidence](chatgpt-task3.jpg). Original printing-task screenshots.
 - Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). Background for comparing tools across multiple tasks and publishing inputs and outputs.
 - [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Examples of task-specific evaluation metrics.
 - [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Background on checking plausible but inaccurate AI output.
