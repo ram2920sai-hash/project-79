@@ -1,0 +1,44 @@
+This is a controlled productivity experiment. Complete all four independent tasks below in order, with headings TASK 1 through TASK 4. Use only the supplied material. Do not browse. Do not invent facts, people, dates, or sources.
+
+
+
+
+TASK 1 - SUMMARIZATION
+
+Summarize this paragraph in exactly 3 simple bullet points, no more than 18 words per bullet:
+
+Artificial Intelligence (AI) is a field of computer science that helps machines perform tasks that usually require human intelligence. AI systems can recognize patterns, understand language, and make predictions based on data. Students use AI tools to understand difficult subjects and prepare study notes. Businesses use AI to support customer service and automate repetitive tasks. However, AI tools can sometimes produce incorrect information, so users should check important facts before relying on their answers.
+
+
+
+
+TASK 2 - NOTE-TAKING
+
+Turn this synthetic meeting transcript into: (a) exactly 2 decision bullets, (b) an action table with columns Action, Owner, Due, (c) one unresolved question. Preserve missing information as Not specified.
+
+Transcript: Maya: We will hold the student AI workshop on 20 November 2026 at 2 PM in Lab 3. Arun: I will prepare the registration form by 16 November. Leena: I will test the projector and Wi-Fi by 19 November. Maya: We agreed to cap attendance at 30 students. Arun: Who will send the reminder email? Maya: We have not assigned that yet. Leena: Is the guest speaker confirmed? Maya: Not yet; that remains open. We need a reminder email sent by 18 November.
+
+
+
+
+TASK 3 - SOURCE-BASED RESEARCH
+
+Answer: Which campus printing option costs least for 120 black-and-white pages, and what limitation matters? Use only these synthetic source extracts. Provide a 3-row comparison table, show arithmetic, then a recommendation of at most 60 words with citations [A], [B], [C]. Do not claim these are real businesses.
+
+[A] Campus Desk: Rs 2 per page; no setup fee; maximum 100 pages per order.
+
+[B] Library Print: Rs 1.50 per page plus Rs 30 setup per order; supports up to 200 pages per order.
+
+[C] Student Center: Rs 1.80 per page; no setup fee; minimum 50 pages per order; maximum 150 pages per order.
+
+
+
+
+TASK 4 - WRITING
+
+Draft a polite email body of 80-110 words to students announcing the synthetic workshop from Task 2. Include confirmed date, time, venue, attendance cap and a request to register. Do not invent a registration link, deadline, or confirmed speaker. Clearly indicate registration details will follow. Do not include a subject line. End with Workshop Team.
+
+
+
+
+Keep each task distinct. Do not add a general introduction or conclusion. (For Task 4, count words as whitespace-separated tokens.)

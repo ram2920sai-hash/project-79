@@ -1,0 +1,10 @@
+Check,ChatGPT,Gemini,Copilot
+Summary: 3 bullets; each <=18 words,Pass,Pass,Pass
+"Notes: 2 decisions, 3 actions, correct missing owner and open question",Pass,Pass,Pass
+Research: cheapest option Rs 210,Correct,Correct,Correct
+Research: full Campus Desk cost and split-order explanation,Incomplete; false per-page claim,Rs 240; explicitly 2 orders,Rs 240; split not explicit
+Research recommendation <=60 words with source labels,Pass,Pass (60 words),Pass
+Email: 80-110 whitespace words,81 words,90 words,92 words
+"Email: date, time, venue, cap, registration details follow",Present,Present,Present
+"Four-task browser time (s), separate follow-up",5.856,10.415,7.556
+Manual baseline / time saved,Not measured,Not measured,Not measured
