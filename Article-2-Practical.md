@@ -41,6 +41,16 @@ The completion control differed across sites, so the timed run used each site's 
 
 For these inputs, all three were useful for summaries and meeting notes. Gemini required the least clarification on the printing comparison. When using an AI draft to make a decision, check the calculation and operational restrictions before acting on its recommendation.
 
+## References
+
+- [Shared four-task prompt](prompt.txt). Exact input used across the three tools.
+- [Topic 79 comparison log](comparison_log.csv). Primary record for the quality observations and browser timings.
+- [Gemini evidence](gemini-task3.jpg) and [ChatGPT evidence](chatgpt-task3.jpg). Original printing-task screenshots.
+- Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). Background for comparing tools across multiple tasks and publishing inputs and outputs.
+- [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Examples of task-specific evaluation metrics.
+- [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Background on checking plausible but inaccurate AI output.
+- [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Product guidance for the privacy discussion.
+
 ## Theory behind the practical comparison
 
 ### Why use the same prompt?
@@ -82,19 +92,6 @@ One accepted timing run per tool shows what happened in those runs. A larger eva
 ### Evidence, privacy and reproducibility
 The experiment uses fictional workshop material and synthetic source extracts. This keeps sensitive input out of the study and makes the expected results independently checkable. The prompt and comparison log let readers reproduce the workflow. Repeat runs may yield different wording and timings because product settings and service behavior can change. [Project files and evidence](https://github.com/ram2920sai-hash/project-79)
 
-## References
-
-- [Shared four-task prompt](prompt.txt). Exact input used across the three tools.
-- [Topic 79 comparison log](comparison_log.csv). Primary record for the quality observations and browser timings.
-- [Gemini evidence](gemini-task3.jpg) and [ChatGPT evidence](chatgpt-task3.jpg). Original printing-task screenshots.
-- Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). Background for comparing tools across multiple tasks and publishing inputs and outputs.
-- [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Examples of task-specific evaluation metrics.
-- [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Background on checking plausible but inaccurate AI output.
-- [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Product guidance for the privacy discussion.
-
-
-
-
 ## Extended evaluation methodology
 
 ### Operational definitions and scoring
@@ -124,4 +121,3 @@ Repeat the comparison with several source sets and vary the order in which tools
 ### From evaluation to a tool-selection decision
 
 Choose criteria that match the work. A meeting organizer may care most about accurate action ownership. Someone comparing suppliers may prioritize calculations and constraints. An editor may prioritize factual fidelity, tone and revision effort. Use the evidence from each task to guide a choice, and repeat the test with input that resembles the intended work before making a broader decision.
-

@@ -20,6 +20,20 @@ These tools produce structured drafts quickly, and the same prompt can be reused
 
 An AI response time measures one stage of the workflow. To measure productivity, include the time spent preparing input, verifying claims and editing the output, then compare the total with doing the same task manually.
 
+## Future scope
+
+A stronger evaluation would test new inputs across several runs, verify each answer against a reference and record manual and assisted completion times. Products could also make verification easier by tying extracted claims to source passages and flagging missing information for the reviewer.
+
+## References
+
+- Vaswani et al. (2017), [Attention Is All You Need](https://arxiv.org/abs/1706.03762), for the Transformer architecture.
+- Topic 79 practical comparison and its experiment log, available in this assignment folder.
+
+- [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Defines confabulation and explains why generated claims require verification.
+- Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). A research framework for comparing language models across tasks and evaluation metrics.
+- [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Shows how evaluation results can be organized by scenario, including summarization and information extraction.
+- [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Explains where to find privacy guidance for different Copilot experiences.
+
 ## Core theory
 
 ### Language models and tokens
@@ -42,10 +56,6 @@ A prompt defines the task, source material and output format. The context is the
 - **Give every tool the same input and criteria** when comparing outputs.
 - **Verify claims with source evidence** before acting on a draft.
 - **Measure the whole workflow** if the goal is to estimate time savings.
-
-## Future scope
-
-A stronger evaluation would test new inputs across several runs, verify each answer against a reference and record manual and assisted completion times. Products could also make verification easier by tying extracted claims to source passages and flagging missing information for the reviewer.
 
 ## Inside a language model
 
@@ -74,19 +84,6 @@ Next-token prediction can produce language that resembles a valid explanation ev
 
 ### Evaluation and future scope
 A stronger evaluation would use several examples per task, verified reference answers and independent reviewers. It would also test whether outputs remain useful when inputs contain ambiguous dates, conflicting quotes or incomplete details. A provenance feature could connect each extracted claim to a source passage, reducing the effort required to verify the draft. [HELM evaluation framework](https://arxiv.org/abs/2211.09110)
-
-## References
-
-- Vaswani et al. (2017), [Attention Is All You Need](https://arxiv.org/abs/1706.03762), for the Transformer architecture.
-- Topic 79 practical comparison and its experiment log, available in this assignment folder.
-
-- [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Defines confabulation and explains why generated claims require verification.
-- Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). A research framework for comparing language models across tasks and evaluation metrics.
-- [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Shows how evaluation results can be organized by scenario, including summarization and information extraction.
-- [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Explains where to find privacy guidance for different Copilot experiences.
-
-
-
 
 ## Advanced theory and applications
 
