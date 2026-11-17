@@ -20,6 +20,29 @@ These tools produce structured drafts quickly, and the same prompt can be reused
 
 An AI response time measures one stage of the workflow. To measure productivity, include the time spent preparing input, verifying claims and editing the output, then compare the total with doing the same task manually.
 
+## Core theory
+
+### Language models and tokens
+
+A language model represents text as tokens, which may be words, parts of words or punctuation. It uses the available context to estimate which token should come next, then repeats this process to build a response. Transformer models use attention to relate tokens to one another, which helps them connect instructions with details scattered across a document. A fluent response still needs verification against its source. [Transformer paper](https://arxiv.org/abs/1706.03762)
+
+### Prompts, context and grounding
+
+A prompt defines the task, source material and output format. The context is the material available for the current response, which may include earlier chat messages and supplied documents. Grounding means tying the answer to evidence in those sources. For example, when extracting meeting actions, “Not specified” is the correct owner if the transcript names nobody. That rule preserves a gap that the human reviewer can resolve.
+
+### Four productivity tasks and their checks
+
+- **Summarization** compresses information. Check that the main ideas survived and that the tool added no unsupported claims.
+- **Note-taking** turns discussion into decisions and actions. Check names, dates, commitments and open questions against the transcript.
+- **Source-based research** compares claims and evidence. Check calculations, source labels and conditions that affect the result.
+- **Writing** adapts facts for an audience. Check tone, word count and whether the draft accidentally introduces new commitments.
+
+### Main points
+
+- **Give every tool the same input and criteria** when comparing outputs.
+- **Verify claims with source evidence** before acting on a draft.
+- **Measure the whole workflow** if the goal is to estimate time savings.
+
 ## Future scope
 
 A stronger evaluation would test new inputs across several runs, verify each answer against a reference and record manual and assisted completion times. Products could also make verification easier by tying extracted claims to source passages and flagging missing information for the reviewer.
@@ -33,3 +56,4 @@ A stronger evaluation would test new inputs across several runs, verify each ans
 - Liang et al., [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110). A research framework for comparing language models across tasks and evaluation metrics.
 - [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Shows how evaluation results can be organized by scenario, including summarization and information extraction.
 - [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Explains where to find privacy guidance for different Copilot experiences.
+

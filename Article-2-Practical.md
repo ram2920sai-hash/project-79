@@ -41,6 +41,27 @@ The completion control differed across sites, so the timed run used each site's 
 
 For these inputs, all three were useful for summaries and meeting notes. Gemini required the least clarification on the printing comparison. When using an AI draft to make a decision, check the calculation and operational restrictions before acting on its recommendation.
 
+## Theory behind the practical comparison
+
+### Why use the same prompt?
+
+A comparison is easier to interpret when every tool gets the same source text, instructions and output constraints. Fresh chats reduce differences from prior messages. The experiment compared the complete browser products as observed, so account settings, model routing and interface behavior may still affect the results. A single run per tool gives a case study rather than an estimate of typical performance. [HELM evaluation framework](https://arxiv.org/abs/2211.09110)
+
+### Accuracy, grounding and instruction following
+
+Accuracy asks whether the answer gets the facts or arithmetic right. Grounding asks whether the explanation follows from the evidence provided. Instruction following asks whether the output respects requested limits and structure. These criteria can disagree. In the printing task, choosing Library Print at Rs 210 was accurate, while calling Campus Desk cheaper per page was unsupported. Reviewing each criterion separately makes this difference visible. [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+
+### Response time and productivity
+
+The browser timer covered the interval from Send to the first observed completion signal. That interval includes network, generation and interface delays. A full productivity comparison would also time prompt preparation, verification and editing. Subtract the total assisted time from the manual time for equivalent work to estimate net savings. This experiment measured browser response times and left the manual baseline unmeasured.
+
+### Main findings
+
+- **Summary and notes:** All three delivered the requested structure in the observed examples.
+- **Printing comparison:** Gemini explained the split-order constraint most clearly in the original trial.
+- **Writing:** All three emails met the requested word-count range.
+- **Timing:** ChatGPT finished first in the separate observed timing runs. More trials are needed to compare typical speed.
+
 ## References
 
 - [Shared four-task prompt](prompt.txt). Exact input used across the three tools.
@@ -50,3 +71,5 @@ For these inputs, all three were useful for summaries and meeting notes. Gemini 
 - [Stanford HELM Classic](https://crfm.stanford.edu/helm/classic/latest/). Examples of task-specific evaluation metrics.
 - [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Background on checking plausible but inaccurate AI output.
 - [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Product guidance for the privacy discussion.
+
+
