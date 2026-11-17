@@ -62,6 +62,26 @@ The browser timer covered the interval from Send to the first observed completio
 - **Writing:** All three emails met the requested word-count range.
 - **Timing:** ChatGPT finished first in the separate observed timing runs. More trials are needed to compare typical speed.
 
+## Detailed evaluation theory
+
+### Unit of comparison and controls
+The unit was one browser-product response to a bundle of four tasks. Each product received the same source materials and format requirements in a fresh chat. This controls differences arising from the prompt and previous conversation. Account settings, automatic model selection, browser behavior and service load could still differ. The observed timing belongs to the complete four-task response, so it cannot be assigned to an individual task.
+
+### Define a rubric before reading outputs
+A rubric turns “good answer” into observable checks. For a summary, count bullets and compare the main claims with the paragraph. For meeting notes, check the decisions, actions and owners against the transcript. For research, recalculate totals and check whether operational constraints affect the result. For writing, check the requested word count, required details and unsupported additions. Record the evidence behind each judgment so someone else can review it. [HELM evaluation framework](https://arxiv.org/abs/2211.09110)
+
+### Worked example of a reference answer
+Library Print charges Rs 1.50 per page and a Rs 30 setup fee. For 120 pages the total is 120 × 1.50 + 30 = Rs 210. Campus Desk charges Rs 2 per page with no setup fee, so the total is 120 × 2 = Rs 240. Its maximum of 100 pages per order means 120 pages require at least two orders. Student Center comes to 120 × 1.80 = Rs 216. These calculations separate three checks: the recommended provider, the numerical justification and the order-size condition.
+
+### Measure completion and reviewer effort separately
+The browser measurement started when Send was triggered and stopped when the interface showed its completion signal. Network delay, the service response and browser rendering all contribute to the observation. In a follow-up comparison, record prompt preparation, response time, verification and corrections as separate stages. The sum is the assisted completion time. Subtract it from a timed manual attempt with equivalent materials to estimate net time saved.
+
+### Repetition and reliable interpretation
+One accepted timing run per tool shows what happened in those runs. A larger evaluation could repeat trials, alternate tool order and report the median and range. Reviewers could score outputs against an answer key with tool names hidden, then compare judgments on disagreements. These steps would help distinguish a repeated advantage from ordinary variation.
+
+### Evidence, privacy and reproducibility
+The experiment uses fictional workshop material and synthetic source extracts. This keeps sensitive input out of the study and makes the expected results independently checkable. The prompt and comparison log let readers reproduce the workflow. Repeat runs may yield different wording and timings because product settings and service behavior can change. [Project files and evidence](https://github.com/ram2920sai-hash/project-79)
+
 ## References
 
 - [Shared four-task prompt](prompt.txt). Exact input used across the three tools.
@@ -72,4 +92,36 @@ The browser timer covered the interval from Send to the first observed completio
 - [NIST Generative AI Risk Management Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Background on checking plausible but inaccurate AI output.
 - [Microsoft Copilot Privacy FAQ](https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot). Product guidance for the privacy discussion.
 
+
+
+
+## Extended evaluation methodology
+
+### Operational definitions and scoring
+
+Define each outcome before evaluating the answers. A three-bullet requirement is a format check. Preserving an unassigned owner is a factual check. Explaining the 100-page order limit is a completeness check. A rubric can mark each criterion separately as met, partially met or missed. With a small sample, reporting the individual judgments lets readers see where the tools differ without hiding those differences in a single average.
+
+### Source coverage and evidence mapping
+
+A review sheet can give every required claim its own row, with columns for the expected fact, the source passage, the model wording and the verdict. This makes omissions visible alongside errors. A research answer might correctly identify the cheapest provider but omit the condition that one provider requires two orders. The omission belongs in the evidence record even though the final ranking is correct.
+
+### Worked error analysis by task
+
+In a summary, an invented consequence is an unsupported addition. In notes, assigning an unclaimed task to someone is a mistaken inference. In research, using the right final price with a wrong comparison of unit rates is a reasoning error. In writing, including the correct date in an email that exceeds the requested length is a format failure. These categories guide different fixes, from changing the prompt to verifying the source or checking the format automatically.
+
+### What the timings measure
+
+The clock began at submission and ended at the first observed completion signal. This browser interval includes the network, the service and the interface. An observation occurs after completion, so the displayed time can lag the actual transition. First-token latency would instead end when the first output appears, and throughput would require a count of completed tokens. The existing experiment measured full response completion for the four-task bundle.
+
+### How to measure actual time saved
+
+Give the same material to someone completing the tasks manually and to someone using an assistant. Record reading, drafting and review time for both approaches. For the assisted workflow, include prompt preparation, model response time and corrections. With an illustrative manual time of 12 minutes and an assisted total of 8 minutes, the saving is 4 minutes, or about 33% of manual time. The example explains the calculation. The Topic 79 runs do not supply a manual baseline.
+
+### Reliability and repeated trials
+
+Repeat the comparison with several source sets and vary the order in which tools are tested. Report the median and observed range alongside the sample size. Separate connection failures or interrupted runs from completed responses and document exclusions. To check whether a result depends on wording, use equivalent prompt variations while retaining the same task criteria. [HELM evaluation framework](https://arxiv.org/abs/2211.09110)
+
+### From evaluation to a tool-selection decision
+
+Choose criteria that match the work. A meeting organizer may care most about accurate action ownership. Someone comparing suppliers may prioritize calculations and constraints. An editor may prioritize factual fidelity, tone and revision effort. Use the evidence from each task to guide a choice, and repeat the test with input that resembles the intended work before making a broader decision.
 
